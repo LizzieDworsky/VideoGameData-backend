@@ -13,6 +13,7 @@ import java.util.Optional;
 @Service
 public class VideoGameService {
 
+    public List<VideoGame> GetAllGames;
     @Autowired
     private VideoGameRepository videoGameRepository;
 
@@ -20,5 +21,10 @@ public class VideoGameService {
         return videoGameRepository.count();
     }
 
+    public List<VideoGame> GetAllGames() {return videoGameRepository.findAll();}
+
+    public Optional<VideoGame> GetById(int id) {
+        return videoGameRepository.findById(id);
+    }
 
 }

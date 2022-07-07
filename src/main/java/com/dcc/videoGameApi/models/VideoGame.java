@@ -18,7 +18,7 @@ public class VideoGame implements Serializable {
     public VideoGame() {
     }
 
-    public VideoGame(int id, int game_rank, String name, String platform, Integer year, String genre, String publisher, double northamericansales, double europesales, double japansales, double othersales, double globalsales) {
+    public VideoGame(int id, int game_rank, String name, String platform, Integer year, String genre, String publisher, double northamericasales, double europesales, double japansales, double othersales, double globalsales) {
         this.id = id;
         this.game_rank = game_rank;
         this.name = name;
@@ -26,7 +26,7 @@ public class VideoGame implements Serializable {
         this.year = year;
         this.genre = genre;
         this.publisher = publisher;
-        this.northamericansales = northamericansales;
+        this.northamericasales = northamericasales;
         this.europesales = europesales;
         this.japansales = japansales;
         this.othersales = othersales;
@@ -41,7 +41,7 @@ public class VideoGame implements Serializable {
     private Integer year;
     private String genre;
     private String publisher;
-    private double northamericansales;
+    private double northamericasales;
     private double europesales;
     private double japansales;
     private double othersales;
@@ -103,12 +103,12 @@ public class VideoGame implements Serializable {
         this.publisher = publisher;
     }
 
-    public double getNorthamericansales() {
-        return northamericansales;
+    public double getNorthamericasales() {
+        return northamericasales;
     }
 
-    public void setNorthamericansales(double northamericansales) {
-        this.northamericansales = northamericansales;
+    public void setNorthamericasales(double northamericasales) {
+        this.northamericasales = northamericasales;
     }
 
     public double getEuropesales() {
